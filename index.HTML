@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DBLAS · Salón & Barber Shop en Mérida, Yucatán. Belleza y estética unisex: cortes, color, uñas, cejas, barbería y tratamientos. Reserva fácil por WhatsApp.">
+<meta name="theme-color" content="#FBF7F1">
+<title>DBLAS · Salón & Barber Shop | Belleza unisex, precios y citas</title>
+<link rel="icon" href="image/heromobil.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="image" href="https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/1dc056089-7470-4ab4-b0e5-eb11fea72fbc.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fraunces@5.1.0/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fraunces@5.1.0/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fraunces@5.1.0/600-italic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fraunces@5.1.0/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5.1.0/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5.1.0/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5.1.0/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5.1.0/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5.1.0/800.css">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ivory:#FBF7F1; --cream:#F5EDE1; --sand:#EADCC6; --line:#E5D8C4;
+  --card:#FFFCF8; --espresso:#241B16; --cocoa:#57463B; --muted:#776659;
+  --gold:#B48A3C; --gold-deep:#8A681F; --gold-soft:#EEDDB6;
+  --wa:#0E7A38; --wa-bright:#25D366;
+  --shadow-lg:0 28px 60px -28px rgba(36,27,22,.28);
+  --shadow-sm:0 10px 26px -14px rgba(36,27,22,.22);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r-lg:26px; --r-md:18px; --r-sm:12px;
+  --header-h:84px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 14px)}
+body{
+  font-family:var(--sans); font-size:17px; line-height:1.65; color:var(--espresso);
+  background:var(--ivory); -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--gold-soft);color:var(--espresso)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--espresso);color:var(--ivory);padding:14px 22px;border-radius:0 0 14px 0;z-index:200;font-weight:700}
+.skip-link:focus{left:0}
+.container{width:min(1180px,100% - 48px);margin-inline:auto}
+.section{padding:clamp(70px,9vw,116px) 0;position:relative}
+.section-band{background:var(--cream)}
+.section-tint{background:radial-gradient(52% 42% at 88% 8%, rgba(238,221,182,.55), transparent 72%)}
+.section-head{max-width:720px;margin-bottom:clamp(34px,5vw,54px)}
+.section-head.center{margin-inline:auto;text-align:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:16px;
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.6vw,3.15rem)}
+.section-head p.sub{margin-top:16px;font-size:clamp(1.02rem,1.6vw,1.15rem);color:var(--cocoa);max-width:56ch}
+.center-cta{text-align:center;margin-top:clamp(30px,4vw,44px)}
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:54px;padding:0 30px;border-radius:999px;border:1.5px solid transparent;
+  font-family:var(--sans);font-size:1.02rem;font-weight:800;letter-spacing:.02em;
+  text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,background .18s ease,border-color .18s ease,color .18s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--espresso);color:#FFF9F0;box-shadow:var(--shadow-sm)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px -16px rgba(36,27,22,.45)}
+.btn-outline{background:transparent;border-color:rgba(36,27,22,.35);color:var(--espresso)}
+.btn-outline:hover{border-color:var(--espresso);background:rgba(36,27,22,.05)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 14px 30px -14px rgba(14,122,56,.55)}
+.btn-wa:hover{transform:translateY(-2px);background:#0b6a30}
+.btn-wa svg{width:22px;height:22px;flex:none}
+.btn-light{background:#FFF9F0;color:var(--espresso);box-shadow:var(--shadow-lg)}
+.btn-light:hover{transform:translateY(-2px)}
+.btn-sm{min-height:46px;padding:0 20px;font-size:.92rem}
+.btn-big{width:100%;min-height:60px;font-size:1.12rem}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--cocoa)}
+.btn-ghost:hover{border-color:var(--cocoa)}
+/* Botón "ver precio" (revelado por servicio) */
+.btn-peek{
+  min-height:44px;padding:0 18px;border-radius:999px;border:1.5px dashed rgba(138,104,31,.55);
+  background:transparent;color:var(--gold-deep);font-weight:800;font-size:.9rem;
+  display:inline-flex;align-items:center;gap:8px;transition:background .18s,border-color .18s,transform .12s;
+}
+.btn-peek:hover{background:var(--gold-soft);border-color:var(--gold-deep)}
+.btn-peek:active{transform:scale(.96)}
+.btn-peek svg{width:18px;height:18px;flex:none}
+.btn-peek.on{border-style:solid;background:var(--card);color:var(--muted);border-color:var(--line)}
+/* ============ HEADER ============ */
+.site-header{
+  position:sticky;top:0;z-index:90;height:var(--header-h);
+  background:rgba(251,247,241,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s;
+}
+.site-header.scrolled{border-color:var(--line);box-shadow:0 8px 24px -18px rgba(36,27,22,.3)}
+.header-inner{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-logo{
+  height:52px;width:auto;border-radius:12px;display:block;object-fit:contain;
+  border:1px solid rgba(180,138,60,.4);box-shadow:0 8px 20px -12px rgba(36,27,22,.55);
+  background:#15100c;
+}
+.main-nav{display:flex;align-items:center;gap:6px}
+.main-nav a{
+  text-decoration:none;font-weight:700;font-size:.98rem;color:var(--cocoa);
+  padding:12px 16px;border-radius:999px;transition:background .18s,color .18s;
+}
+.main-nav a:hover{background:rgba(36,27,22,.06);color:var(--espresso)}
+.main-nav a.active{color:var(--espresso);background:var(--gold-soft)}
+.header-actions{display:flex;align-items:center;gap:12px}
+.menu-toggle{
+  display:none;width:50px;height:50px;border-radius:14px;border:1.5px solid var(--line);
+  background:var(--card);align-items:center;justify-content:center;flex-direction:column;gap:5px;
+}
+.menu-toggle span{display:block;width:20px;height:2px;background:var(--espresso);border-radius:2px;transition:transform .25s,opacity .25s}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{
+  position:fixed;inset:var(--header-h) 0 auto 0;z-index:89;background:var(--ivory);
+  border-bottom:1px solid var(--line);padding:14px 24px 26px;display:none;flex-direction:column;gap:4px;
+  box-shadow:0 30px 50px -30px rgba(36,27,22,.35);
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{
+  text-decoration:none;font-weight:700;font-size:1.12rem;padding:15px 10px;border-radius:12px;color:var(--espresso);
+}
+.mobile-menu a:hover{background:var(--cream)}
+.mobile-menu .btn{margin-top:10px}
+/* ============ HERO ============ */
+.hero{padding:clamp(40px,6vw,72px) 0 clamp(60px,7vw,90px);overflow:hidden;
+  background:
+    radial-gradient(60% 50% at 88% 0%,rgba(238,221,182,.55),transparent 70%),
+    linear-gradient(#FFFCF8,var(--ivory));
+}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(34px,5vw,70px);align-items:center}
+.hero h1{font-size:clamp(2.7rem,6.4vw,4.7rem);text-transform:uppercase;letter-spacing:.005em}
+.hero-accent{
+  font-style:italic;color:var(--gold-deep);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'><path d='M3 8c20-6 40 4 57-2 20-6 39 2 57-2' fill='none' stroke='%23B48A3C' stroke-width='3.4' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-size:100% .32em;background-position:0 96%;padding-bottom:.14em;
+}
+.hero-lead{margin-top:22px;font-size:clamp(1.06rem,1.8vw,1.22rem);color:var(--cocoa);max-width:46ch}
+.hero-ctas{margin-top:32px;display:flex;flex-wrap:wrap;gap:14px}
+.hero-checks{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px 26px;list-style:none}
+.hero-checks li{display:flex;align-items:center;gap:9px;font-weight:700;font-size:.98rem;color:var(--cocoa)}
+.hero-checks svg{width:21px;height:21px;color:var(--wa);flex:none}
+.hero-media{position:relative}
+.hero-frame{
+  border-radius:999px 999px 30px 30px;overflow:hidden;aspect-ratio:4/5;position:relative;
+  box-shadow:var(--shadow-lg);
+}
+.hero-frame img{width:100%;height:100%;object-fit:cover}
+.hero-frame::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,252,248,.35)}
+.hero-halo{position:absolute;inset:-16px -16px auto auto;width:62%;aspect-ratio:1;border-radius:50%;border:1.5px solid var(--gold-soft);z-index:-1}
+.hero-badge{
+  position:absolute;left:-14px;bottom:34px;display:flex;align-items:center;gap:10px;
+  background:var(--card);border:1px solid var(--line);border-radius:999px;padding:12px 20px;
+  font-weight:800;font-size:.92rem;box-shadow:var(--shadow-sm);
+}
+.hero-badge svg{width:20px;height:20px;color:var(--wa-bright)}
+/* ============ QUICK ACCESS ============ */
+.qa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.qa-card{
+  display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-decoration:none;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:26px 24px 22px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.qa-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm);border-color:var(--gold)}
+.qa-emoji{
+  width:62px;height:62px;border-radius:50%;background:var(--cream);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:10px;
+}
+.qa-name{font-size:1.42rem}
+.qa-cta{margin-top:auto;padding-top:14px;font-weight:700;font-size:.95rem;color:var(--cocoa);text-decoration:underline;text-underline-offset:4px}
+.qa-card:hover .qa-cta{color:var(--espresso)}
+.favs-block{margin-top:clamp(56px,8vw,92px)}
+.favs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fav-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease;
+}
+.fav-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.fav-media{aspect-ratio:4/3;overflow:hidden}
+.fav-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.fav-card:hover .fav-media img{transform:scale(1.045)}
+.fav-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.fav-body h3{font-size:1.32rem}
+.fav-desc{color:var(--muted);font-size:.97rem}
+.fav-foot{margin-top:auto;padding-top:16px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.fav-price{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--gold-deep);width:100%}
+.fav-price em{font-family:var(--sans);font-style:normal;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block}
+/* ============ PRECIOS ============ */
+.chips-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin:30px 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{
+  min-height:50px;padding:0 24px;border-radius:999px;border:1.5px solid rgba(36,27,22,.22);
+  background:var(--card);font-weight:800;font-size:1rem;color:var(--cocoa);
+  transition:background .18s,color .18s,border-color .18s,transform .12s;
+}
+.chip:hover{border-color:var(--espresso)}
+.chip:active{transform:scale(.96)}
+.chip[aria-pressed="true"]{background:var(--espresso);border-color:var(--espresso);color:#FFF9F0}
+.price-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.price-row{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);
+  padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  transition:border-color .18s,box-shadow .18s;
+}
+.price-row:hover{border-color:var(--gold);box-shadow:var(--shadow-sm)}
+.price-info h3{font-family:var(--sans);font-weight:800;font-size:1.06rem;letter-spacing:0;line-height:1.3}
+.price-info p{font-size:.88rem;color:var(--muted);margin-top:2px}
+.price-side{display:flex;align-items:center;gap:14px;flex:none}
+.price-value{font-family:var(--serif);font-weight:600;font-size:1.5rem;color:var(--gold-deep);white-space:nowrap;text-align:right}
+.price-value em{display:block;font-family:var(--sans);font-style:normal;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.price-edit{display:flex;align-items:center;gap:10px}
+.price-input{
+  width:110px;min-height:46px;border:1.5px solid var(--line);border-radius:10px;background:var(--ivory);
+  font-family:var(--sans);font-weight:700;font-size:1rem;padding:0 12px;color:var(--espresso);
+}
+.desde-toggle{display:flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;color:var(--muted);white-space:nowrap}
+.desde-toggle input{width:20px;height:20px;accent-color:var(--gold-deep)}
+.prices-foot{margin-top:22px;font-size:.92rem;color:var(--muted);max-width:64ch}
+.edit-banner{
+  display:none;margin-bottom:18px;background:var(--gold-soft);border:1px dashed var(--gold);
+  border-radius:var(--r-md);padding:14px 20px;font-weight:700;font-size:.95rem;color:var(--espresso);
+}
+body.editing .edit-banner{display:block}
+/* ============ EXPERIENCIA ============ */
+.exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:center}
+.exp-media{border-radius:30px 30px 999px 999px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-lg)}
+.exp-media img{width:100%;height:100%;object-fit:cover}
+.exp-copy p{margin-top:18px;color:var(--cocoa);max-width:50ch}
+.exp-benefits{margin-top:28px;list-style:none;display:flex;flex-direction:column;gap:16px}
+.exp-benefits li{display:flex;align-items:center;gap:14px;font-weight:800;font-size:1.05rem}
+.exp-ico{
+  width:46px;height:46px;flex:none;border-radius:50%;background:var(--card);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;color:var(--gold-deep);
+}
+.exp-ico svg{width:21px;height:21px}
+/* ============ GALERÍA ============ */
+.gal-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-tile{
+  position:relative;border:none;padding:0;border-radius:20px;overflow:hidden;aspect-ratio:4/5;
+  background:var(--sand);transition:transform .2s ease,box-shadow .2s ease;
+}
+.gal-tile:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
+.gal-tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.gal-tile:hover img{transform:scale(1.05)}
+.gal-cap{
+  position:absolute;inset:auto 0 0 0;padding:34px 16px 14px;text-align:left;color:#FFF9F0;
+  background:linear-gradient(transparent,rgba(24,17,12,.72));
+  display:flex;flex-direction:column;gap:2px;
+}
+.gal-cap strong{font-size:1rem;font-weight:800}
+.gal-cap span{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.gal-note{margin-top:22px;font-size:.92rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+/* ============ LIGHTBOX ============ */
+.lightbox{position:fixed;inset:0;z-index:140;background:rgba(20,14,10,.9);display:flex;align-items:center;justify-content:center;padding:22px}
+.lightbox[hidden]{display:none}
+.lightbox figure{max-width:min(860px,92vw);text-align:center}
+.lightbox img{max-height:76vh;width:auto;max-width:100%;margin-inline:auto;border-radius:18px;object-fit:contain}
+.lightbox figcaption{margin-top:14px;color:#F4E9DA;font-weight:700}
+.lightbox figcaption span{display:block;font-size:.82rem;opacity:.75;font-weight:600;margin-top:4px}
+.lb-btn{
+  position:absolute;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,249,240,.35);
+  background:rgba(255,249,240,.1);color:#FFF9F0;font-size:1.5rem;line-height:1;display:flex;align-items:center;justify-content:center;
+}
+.lb-btn:hover{background:rgba(255,249,240,.22)}
+#lbClose{top:18px;right:18px}
+#lbPrev{left:14px;top:50%;transform:translateY(-50%)}
+#lbNext{right:14px;top:50%;transform:translateY(-50%)}
+/* ============ WHY ============ */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.why-item{border-top:1.5px solid var(--line);padding-top:22px}
+.why-num{font-family:var(--serif);font-size:2.4rem;font-weight:600;color:var(--gold);display:block;line-height:1}
+.why-item h3{font-size:1.28rem;margin:14px 0 8px}
+.why-item p{color:var(--muted);font-size:.97rem}
+/* ============ RESERVA ============ */
+.book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,4.5vw,60px);align-items:start}
+.book-steps{list-style:none;display:flex;flex-direction:column;gap:8px;position:relative}
+.book-steps li{display:flex;gap:18px;align-items:flex-start;padding:16px 0;position:relative}
+.book-steps li + li::before{content:"";position:absolute;left:26px;top:-14px;height:26px;width:1.5px;background:var(--gold-soft)}
+.step-num{
+  width:52px;height:52px;flex:none;border-radius:50%;background:var(--card);border:1.5px solid var(--gold);
+  color:var(--gold-deep);font-family:var(--serif);font-size:1.4rem;font-weight:600;display:flex;align-items:center;justify-content:center;
+}
+.book-steps h3{font-size:1.3rem;margin:4px 0 4px}
+.book-steps p{color:var(--muted);font-size:.98rem}
+.book-card{
+  background:var(--card);border:1px solid var(--line);border-radius:30px;padding:clamp(24px,4vw,40px);
+  box-shadow:var(--shadow-lg);transition:box-shadow .3s;
+}
+.book-card.flash{box-shadow:0 0 0 4px rgba(180,138,60,.25),var(--shadow-lg)}
+.book-note{margin-top:14px;text-align:center;color:var(--muted);font-size:.95rem;font-weight:600}
+.form-row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.field label{font-weight:800;font-size:1rem}
+.field label small{font-weight:600;color:var(--muted)}
+.field input,.field select,.field textarea{
+  min-height:54px;border:1.5px solid var(--line);border-radius:14px;background:var(--ivory);
+  padding:0 16px;font-family:var(--sans);font-size:1.02rem;color:var(--espresso);width:100%;
+  transition:border-color .18s,box-shadow .18s;
+}
+.field textarea{padding:14px 16px;resize:vertical;min-height:110px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(180,138,60,.14)}
+.field select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2357463B' stroke-width='2.4' stroke-linecap='round'><path d='M6 9l6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 16px center;background-size:18px;padding-right:46px}
+.peek-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-4px 0 16px}
+.peek-out{font-weight:800;color:var(--gold-deep);font-size:1.05rem}
+/* ============ CONTACTO ============ */
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.contact-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 24px;
+  display:flex;flex-direction:column;align-items:flex-start;gap:10px;
+}
+.contact-card .exp-ico{background:var(--cream)}
+.contact-card h3{font-size:1.3rem}
+.contact-card p{color:var(--cocoa);font-size:.98rem;white-space:pre-line}
+.contact-card .btn{margin-top:auto}
+.wa-num{font-weight:800;color:var(--wa);font-size:1.08rem;letter-spacing:.02em}
+/* ============ CTA FINAL ============ */
+.cta-final{position:relative;padding:clamp(90px,12vw,150px) 0;text-align:center;color:#FFF9F0;overflow:hidden}
+.cta-final img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cta-final::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(26,18,13,.5),rgba(26,18,13,.78))}
+.cta-final .container{position:relative;z-index:2}
+.cta-final h2{font-size:clamp(2.3rem,5.4vw,3.8rem)}
+.cta-final p{margin:18px auto 30px;font-size:1.12rem;color:#F0E5D6;max-width:44ch}
+/* ============ FOOTER ============ */
+.site-footer{background:var(--espresso);color:#E9DCC8;padding:clamp(50px,7vw,76px) 0 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;padding-bottom:44px}
+.footer-grid h4{font-family:var(--sans);font-size:.82rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:16px}
+.footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-grid a,.footer-grid button{color:#E9DCC8;text-decoration:none;font-weight:600;font-size:.98rem;background:none;border:none;padding:0;text-align:left;min-height:0}
+.footer-grid a:hover,.footer-grid button:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.f-brand .brand-logo{height:60px;border-color:rgba(238,221,182,.3)}
+.f-brand p{margin-top:14px;color:#C9B8A2;font-size:.96rem;max-width:34ch}
+.footer-bottom{border-top:1px solid rgba(233,220,200,.16);padding:20px 0 26px;display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between;font-size:.88rem;color:#B9A78F}
+.footer-bottom .legal{display:flex;gap:18px}
+.footer-bottom button{background:none;border:none;color:#B9A78F;font-size:.88rem;text-decoration:underline;text-underline-offset:3px}
+.footer-bottom button:hover{color:#fff}
+/* ============ BARRA MÓVIL ============ */
+.mobile-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:95;display:none;gap:10px;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,252,248,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+}
+.mobile-bar .btn{flex:1;min-height:52px;font-size:1rem}
+/* ============ WHATSAPP FLOTANTE ============ */
+.wa-float{
+  position:fixed;right:20px;bottom:26px;z-index:96;
+  width:64px;height:64px;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%, #35e07c, #129a4a 62%, #0e7a38);
+  display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;
+  box-shadow:0 18px 38px -14px rgba(14,122,56,.6), 0 4px 14px -6px rgba(14,122,56,.4);
+  transform:scale(0);transition:transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s;
+  -webkit-tap-highlight-color:transparent;
+}
+.wa-float.in{transform:scale(1)}
+.wa-float.in:hover,.wa-float.in:focus-visible{transform:scale(1.09);box-shadow:0 22px 44px -14px rgba(14,122,56,.7)}
+.wa-float.in:active{transform:scale(.96)}
+.wa-float svg{width:32px;height:32px;position:relative;z-index:2}
+.wa-float.in svg{animation:waWiggle 3.4s ease-in-out 2.2s infinite}
+@keyframes waWiggle{
+  0%,86%,100%{transform:rotate(0) scale(1)}
+  88%{transform:rotate(-12deg) scale(1.06)}
+  91%{transform:rotate(10deg) scale(1.06)}
+  94%{transform:rotate(-8deg) scale(1.04)}
+  97%{transform:rotate(5deg) scale(1.02)}
+}
+.wa-float::before{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  border:2px solid rgba(37,211,102,.6);opacity:0;
+}
+.wa-float.in::before{animation:waPulse 2.6s ease-out 1.4s infinite}
+.wa-float::after{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  border:2px solid rgba(37,211,102,.35);opacity:0;
+}
+.wa-float.in::after{animation:waPulse 2.6s ease-out 2.1s infinite}
+@keyframes waPulse{
+  0%{transform:scale(1);opacity:.85}
+  100%{transform:scale(1.65);opacity:0}
+}
+.wa-float .wa-dot{
+  position:absolute;top:4px;right:4px;width:14px;height:14px;border-radius:50%;
+  background:#FFD34D;border:2.5px solid var(--ivory);z-index:3;
+}
+.wa-float.in .wa-dot{animation:waDot 2s ease-in-out 1.6s infinite}
+@keyframes waDot{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+.wa-hint{
+  position:fixed;right:96px;bottom:40px;z-index:96;
+  background:var(--card);border:1px solid var(--line);border-radius:16px 16px 2px 16px;
+  padding:10px 18px;font-weight:800;font-size:.92rem;color:var(--espresso);
+  box-shadow:var(--shadow-sm);opacity:0;transform:translateY(10px) scale(.9);
+  transition:opacity .35s ease,transform .35s cubic-bezier(.34,1.56,.64,1);
+  pointer-events:none;max-width:220px;
+}
+.wa-hint.show{opacity:1;transform:none}
+/* ============ OWNER PANEL / LOGIN ============ */
+.overlay{position:fixed;inset:0;z-index:120;background:rgba(24,17,12,.5);backdrop-filter:blur(3px)}
+.overlay[hidden]{display:none}
+.owner-panel{
+  position:fixed;top:0;right:0;bottom:0;z-index:130;width:min(430px,100vw);background:var(--ivory);
+  box-shadow:-24px 0 60px -30px rgba(24,17,12,.5);padding:26px 26px 40px;overflow-y:auto;
+  transform:translateX(100%);transition:transform .3s ease;
+}
+.owner-panel.open{transform:none}
+.owner-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:8px}
+.owner-head h3{font-size:1.5rem}
+.icon-close{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);font-size:1.2rem;color:var(--espresso)}
+.owner-hint{font-size:.9rem;color:var(--muted);margin:10px 0 20px}
+.switch{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1rem;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:16px;cursor:pointer}
+.switch input{width:24px;height:24px;accent-color:var(--gold-deep);flex:none}
+.owner-panel fieldset{border:none;margin:24px 0 8px}
+.owner-panel legend{font-weight:800;font-size:1.02rem;margin-bottom:14px}
+.owner-actions{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+/* ============ MODALES ============ */
+.modal{position:fixed;inset:0;z-index:150;background:rgba(24,17,12,.55);display:flex;align-items:center;justify-content:center;padding:22px}
+.modal[hidden]{display:none}
+.modal-card{background:var(--ivory);border-radius:24px;max-width:560px;width:100%;max-height:86vh;overflow-y:auto;padding:32px}
+.modal-sm{max-width:420px}
+.modal-card h3{font-size:1.6rem;margin-bottom:14px}
+.modal-card p{color:var(--cocoa);font-size:.98rem;margin-bottom:12px}
+.modal-card .btn{margin-top:8px}
+.login-hint{font-size:.95rem}
+.login-error{color:#B3261E;font-weight:800;font-size:.92rem;margin:2px 0 6px}
+.modal-card.shake{animation:shake .4s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}50%{transform:translateX(8px)}75%{transform:translateX(-4px)}}
+/* ============ TOAST ============ */
+.toast{
+  position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);z-index:160;opacity:0;pointer-events:none;
+  background:var(--espresso);color:#FFF9F0;font-weight:700;font-size:.98rem;border-radius:999px;
+  padding:14px 26px;box-shadow:var(--shadow-lg);transition:opacity .3s,transform .3s;max-width:90vw;text-align:center;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+noscript .noscript-note{display:block;background:var(--gold-soft);color:var(--espresso);padding:14px 20px;text-align:center;font-weight:700}
+/* ============ RESPONSIVE ============ */
+@media (max-width:1000px){
+  .qa-grid{grid-template-columns:repeat(2,1fr)}
+  .favs-grid{grid-template-columns:repeat(2,1fr)}
+  .gal-grid{grid-template-columns:repeat(3,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .main-nav{display:none}
+  .menu-toggle{display:flex}
+  .header-actions .btn-header{min-height:48px;padding:0 20px;font-size:.95rem}
+  .brand-logo{height:44px}
+  .mobile-bar{display:flex}
+  body{padding-bottom:82px}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-media{max-width:480px;margin-inline:auto;width:100%}
+  .hero-badge{left:8px}
+  .exp-grid{grid-template-columns:1fr}
+  .exp-media{max-width:440px;margin-inline:auto;width:100%}
+  .book-grid{grid-template-columns:1fr}
+  .price-list{grid-template-columns:1fr}
+  .toast{bottom:100px}
+  /* WhatsApp flotante por encima de la barra móvil */
+  .wa-float{right:14px;bottom:calc(84px + env(safe-area-inset-bottom));width:60px;height:60px}
+  .wa-float svg{width:29px;height:29px}
+  .wa-hint{right:84px;bottom:calc(98px + env(safe-area-inset-bottom))}
+}
+@media (max-width:640px){
+  .container{width:min(1180px,100% - 36px)}
+  .qa-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .qa-card{padding:20px 16px 16px}
+  .qa-emoji{width:52px;height:52px;font-size:1.4rem}
+  .qa-name{font-size:1.16rem}
+  .favs-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .contact-grid{grid-template-columns:1fr}
+  .form-row2{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr;gap:20px}
+  .footer-grid{grid-template-columns:1fr}
+  .price-row{flex-direction:column;align-items:flex-start;gap:12px}
+  .price-side{width:100%;justify-content:space-between}
+  .chips-row{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  .reveal{opacity:1;transform:none}
+  .wa-float{transform:scale(1)}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="DBLAS, Salón y Barber Shop — inicio">
+      <img class="brand-logo" src="image/heromobil.png" width="1024" height="447" alt="Logotipo dorado de DBLAS Salón & Barber Shop"
+           onerror="this.onerror=null;this.src='https://image.qwenlm.ai/public_source/656cff3d-4534-4938-9a3b-d3b6a74af29f/1fdd9de4f-1574-47aa-bf3a-c22e336add50.png';">
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#servicios" data-spy="servicios">Servicios</a>
+      <a href="#precios" data-spy="precios">Precios</a>
+      <a href="#galeria" data-spy="galeria">Galería</a>
+      <a href="#contacto" data-spy="contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary btn-header" href="#reservar">Reservar cita</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Navegación móvil">
+  <a href="#servicios">Servicios</a>
+  <a href="#precios">Precios</a>
+  <a href="#galeria">Galería</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto">Contacto</a>
+  <a class="btn btn-primary" href="#reservar">Reservar mi cita</a>
+</nav>
+
+<main id="main">
+<noscript><span class="noscript-note">Activa JavaScript para ver la lista completa de precios y reservar en línea.</span></noscript>
+
+<!-- 01 HERO -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Salón &amp; Barber Shop · Unisex</p>
+      <h1 id="heroTitle">Tu estilo.<br>Tu belleza.<br><em class="hero-accent">Tu momento.</em></h1>
+      <p class="hero-lead">Belleza, estilo y cuidado para ella y para él. Encuentra tu servicio, conoce el precio y reserva fácilmente.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#reservar">Reservar mi cita</a>
+        <a class="btn btn-outline" href="#precios">Ver servicios y precios</a>
+      </div>
+      <ul class="hero-checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Atención personalizada</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Precios claros</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Reserva fácil por WhatsApp</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div class="hero-frame">
+        <img src="https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/1dc056089-7470-4ab4-b0e5-eb11fea72fbc.png" width="1024" height="1280" fetchpriority="high" alt="Estilista yucateca peinando con cariño el cabello ondulado de una clienta sonriente en el salón DBLAS de Mérida">
+      </div>
+      <p class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.7.8 2 .9.3.2.5.2.6.4.1.1.1.7-.1 1.2z"/></svg>
+        Confirmamos por WhatsApp
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 ACCESOS RÁPIDOS + 03 FAVORITOS -->
+<section class="section" id="servicios" aria-labelledby="servTitle">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Nuestros servicios</p>
+      <h2 id="servTitle">¿Qué necesitas hoy?</h2>
+      <p class="sub" style="margin-inline:auto">Toca una opción y ve directamente a sus servicios.</p>
+    </div>
+    <div class="qa-grid" id="qaGrid"></div>
+
+    <div class="favs-block">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Destacados</p>
+        <h2>Los favoritos de DBLAS</h2>
+        <p class="sub" style="margin-inline:auto">Los servicios que más nos piden, sin buscarle más.</p>
+      </div>
+      <div class="favs-grid" id="favsGrid"></div>
+      <div class="center-cta reveal">
+        <a class="btn btn-outline" href="#precios">Ver todos los servicios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 PRECIOS (ocultos hasta tocar "Ver precio") -->
+<section class="section section-band" id="precios" aria-labelledby="preciosTitle">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Lista 2026</p>
+      <h2 id="preciosTitle">Precios claros.<br>Sin sorpresas.</h2>
+      <p class="sub">Elige una categoría y toca <strong>“Ver precio”</strong> en el servicio que te interesa. Así de simple.</p>
+    </div>
+    <div class="chips-row">
+      <div class="chips" id="priceChips" role="group" aria-label="Categorías de precios"></div>
+      <button class="btn btn-outline btn-sm" id="catToggle" type="button">Mostrar todos los precios</button>
+    </div>
+    <p class="edit-banner" role="status">Modo edición activo: modifica los precios directamente en la lista y guarda desde el panel del propietario.</p>
+    <ul class="price-list" id="priceList" aria-live="polite"></ul>
+    <p class="prices-foot">Precios en pesos mexicanos (MXN) · Lista 2026. Los servicios marcados como “desde” pueden variar según largo, densidad o técnica.</p>
+  </div>
+</section>
+
+<!-- 05 EXPERIENCIA -->
+<section class="section" id="nosotros" aria-labelledby="expTitle">
+  <div class="container exp-grid">
+    <div class="exp-media reveal">
+      <img src="https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/1564afc5b-b3f3-41b4-8e5c-c064dbd9e5e6.png" width="1024" height="1280" loading="lazy" decoding="async" alt="Estilista yucateca asesorando a una clienta de Mérida con la carta de colores, ambas sonriendo">
+    </div>
+    <div class="exp-copy reveal">
+      <p class="eyebrow">Experiencia DBLAS</p>
+      <h2 id="expTitle">Más que una cita.<br>Tu momento para ti.</h2>
+      <p>Sabemos que tu visita no es solo un corte, un color o unas uñas: es ese momento de la semana que es tuyo.</p>
+      <p>Por eso cada cita empieza igual: escuchándote. Propones, preguntas y sales viéndote como lo imaginaste — o mejor.</p>
+      <ul class="exp-benefits">
+        <li><span class="exp-ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21C12 21 4 15.5 4 9.8 4 6.6 6.4 4.5 9 4.5c1.5 0 2.6.9 3 1.6.4-.7 1.5-1.6 3-1.6 2.6 0 5 2.1 5 5.3C20 15.5 12 21 12 21z"/></svg></span>Te escuchamos</li>
+        <li><span class="exp-ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9z"/></svg></span>Cuidamos cada detalle</li>
+        <li><span class="exp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Sabes el precio antes de comenzar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 06 GALERÍA -->
+<section class="section section-band" id="galeria" aria-labelledby="galTitle">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Galería</p>
+      <h2 id="galTitle">Resultados que inspiran tu próximo look</h2>
+      <p class="sub">Toca cualquier foto para verla en grande.</p>
+    </div>
+    <div class="gal-filters" id="galFilters" role="group" aria-label="Filtrar galería por categoría"></div>
+    <div class="gal-grid" id="galGrid"></div>
+    <p class="gal-note">📷 Fotos ilustrativas de referencia · próximamente trabajos reales del salón.</p>
+    <div class="center-cta reveal">
+      <a class="btn btn-primary" href="#reservar">Quiero un look así</a>
+    </div>
+  </div>
+</section>
+
+<!-- 07 POR QUÉ -->
+<section class="section" aria-labelledby="whyTitle">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Nuestra promesa</p>
+      <h2 id="whyTitle">¿Por qué elegir DBLAS?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><span class="why-num">01</span><h3>Atención personalizada</h3><p>Tu cita empieza escuchando tu idea y tu estilo.</p></div>
+      <div class="why-item reveal"><span class="why-num">02</span><h3>Profesionales que te escuchan</h3><p>Cuidamos el proceso tanto como el resultado.</p></div>
+      <div class="why-item reveal"><span class="why-num">03</span><h3>Todo en un mismo lugar</h3><p>Cabello, uñas, cejas, barbería y estética para ella y él.</p></div>
+      <div class="why-item reveal"><span class="why-num">04</span><h3>Precios claros</h3><p>Consulta el precio del servicio que te interesa cuando tú quieras.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 RESERVA -->
+<section class="section section-tint" id="reservar" aria-labelledby="bookTitle">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Reservación</p>
+      <h2 id="bookTitle">Reserva tu cita</h2>
+      <p class="sub" style="margin-inline:auto">Te tomará menos de un minuto.</p>
+    </div>
+    <div class="book-grid">
+      <ol class="book-steps reveal">
+        <li><span class="step-num" aria-hidden="true">1</span><div><h3>Elige tu servicio</h3><p>Selecciona cualquiera de nuestra lista 2026.</p></div></li>
+        <li><span class="step-num" aria-hidden="true">2</span><div><h3>Selecciona día y hora</h3><p>Propón el día y el horario que te acomoda.</p></div></li>
+        <li><span class="step-num" aria-hidden="true">3</span><div><h3>Confirma por WhatsApp</h3><p>Te respondemos para confirmar disponibilidad.</p></div></li>
+      </ol>
+      <form class="book-card reveal" id="bookingForm" novalidate>
+        <div class="field">
+          <label for="bookService">¿Qué servicio quieres?</label>
+          <select id="bookService" name="bookService" required></select>
+        </div>
+        <div class="peek-row">
+          <button class="btn-peek" id="bookPeek" type="button" aria-expanded="false" aria-controls="bookPriceOut">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>
+            Ver precio del servicio
+          </button>
+          <span class="peek-out" id="bookPriceOut" hidden></span>
+        </div>
+        <div class="form-row2">
+          <div class="field">
+            <label for="bookDate">¿Qué día prefieres?</label>
+            <input id="bookDate" name="bookDate" type="date" required>
+          </div>
+          <div class="field">
+            <label for="bookTime">¿A qué hora?</label>
+            <input id="bookTime" name="bookTime" type="time" min="09:00" max="21:00">
+          </div>
+        </div>
+        <div class="field">
+          <label for="bookName">¿Cómo te llamas?</label>
+          <input id="bookName" name="bookName" type="text" autocomplete="name" required maxlength="60">
+        </div>
+        <button class="btn btn-wa btn-big" type="submit">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          Reservar por WhatsApp
+        </button>
+        <p class="book-note">Te confirmaremos disponibilidad por WhatsApp.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 09 CONTACTO -->
+<section class="section section-band" id="contacto" aria-labelledby="conTitle">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2 id="conTitle">Visítanos o escríbenos</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <span class="exp-ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 22s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11zm0-8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></span>
+        <h3>Visítanos</h3>
+        <p id="contactAddress"></p>
+        <a class="btn btn-outline btn-sm" id="btnMaps" href="#" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <div class="contact-card reveal">
+        <span class="exp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+        <h3>Horarios</h3>
+        <p id="contactHours"></p>
+      </div>
+      <div class="contact-card reveal">
+        <span class="exp-ico" style="color:var(--wa)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.7.8 2 .9.3.2.5.2.6.4.1.1.1.7-.1 1.2z"/></svg></span>
+        <h3>WhatsApp</h3>
+        <p class="wa-num" id="contactWaNum"></p>
+        <p>¿Tienes alguna pregunta? Escríbenos y te respondemos pronto.</p>
+        <a class="btn btn-wa btn-sm" id="btnWaQuestion" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+      <div class="contact-card reveal">
+        <span class="exp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+        <h3>Instagram</h3>
+        <p>@dblassalon.mx<br>Mira trabajos y promociones.</p>
+        <a class="btn btn-outline btn-sm" href="https://www.instagram.com/dblassalon.mx" target="_blank" rel="noopener">Ver Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 CTA FINAL -->
+<section class="cta-final" aria-labelledby="ctaTitle">
+  <img class="bg" src="https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/1a21397bd-c020-4b22-8407-b7d68cc7fc75.png" width="1024" height="1024" loading="lazy" decoding="async" alt="Clienta yucateca feliz admirando su nuevo peinado frente al espejo iluminado del salón DBLAS en Mérida">
+  <div class="container">
+    <h2 id="ctaTitle">Tu próximo look<br>empieza aquí.</h2>
+    <p>Elige tu servicio y reserva tu cita en minutos.</p>
+    <a class="btn btn-light" href="#reservar">Reservar mi cita</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a class="brand" href="#top" aria-label="DBLAS — inicio">
+          <img class="brand-logo" src="image/heromobil.png" width="1024" height="447" alt="Logotipo dorado de DBLAS Salón & Barber Shop"
+               onerror="this.onerror=null;this.src='https://image.qwenlm.ai/public_source/656cff3d-4534-4938-9a3b-d3b6a74af29f/1fdd9de4f-1574-47aa-bf3a-c22e336add50.png';">
+        </a>
+        <p>Belleza y estética unisex en Mérida, Yucatán. Tu estilo, tu belleza, tu momento.</p>
+      </div>
+      <div>
+        <h4>Explora</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a id="footerWa" href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a id="footerMaps" href="#" target="_blank" rel="noopener">Ubicación del salón</a></li>
+          <li><a href="https://www.instagram.com/dblassalon.mx" target="_blank" rel="noopener">Instagram · @dblassalon.mx</a></li>
+          <li><a href="https://www.facebook.com/dblassalon.mx/" target="_blank" rel="noopener">Facebook · DBLA SALON</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Aviso</h4>
+        <ul>
+          <li><button type="button" data-legal="privacidad">Privacidad</button></li>
+          <li><button type="button" data-legal="terminos">Términos</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DBLAS Salón &amp; Barber Shop. Todos los derechos reservados.</span>
+      <span class="legal">
+        <button type="button" data-legal="privacidad">Privacidad</button>
+        <button type="button" data-legal="terminos">Términos</button>
+      </span>
+    </div>
+  </div>
+</footer>
+<!-- Acceso del propietario (no visible): abre esta página con #admin al final de la URL, o pulsa Ctrl + Alt + P -->
+
+<!-- BARRA MÓVIL -->
+<div class="mobile-bar" role="navigation" aria-label="Acciones rápidas">
+  <a class="btn btn-primary" href="#reservar">Reservar cita</a>
+</div>
+
+<!-- WHATSAPP FLOTANTE -->
+<span class="wa-hint" id="waHint" aria-hidden="true">¿Te agendo una cita? 💬</span>
+<a class="wa-float" id="floatWa" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al salón DBLAS">
+  <span class="wa-dot" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<!-- LOGIN PROPIETARIO (oculto) -->
+<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
+  <div class="modal-card modal-sm" id="loginCard">
+    <h3 id="loginTitle">Acceso del propietario</h3>
+    <p class="login-hint">Área privada para administrar precios y datos de contacto.</p>
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="loginUser">Usuario</label>
+        <input id="loginUser" type="text" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label for="loginPass">Contraseña</label>
+        <input id="loginPass" type="password" autocomplete="current-password" required>
+      </div>
+      <p class="login-error" id="loginError" role="alert" hidden>Usuario o contraseña incorrectos.</p>
+      <button class="btn btn-primary" type="submit" style="width:100%">Entrar</button>
+    </form>
+  </div>
+</div>
+
+<!-- PANEL PROPIETARIO (oculto) -->
+<div class="overlay" id="ownerOverlay" hidden></div>
+<aside class="owner-panel" id="ownerPanel" role="dialog" aria-modal="true" aria-labelledby="ownerTitle" aria-hidden="true">
+  <div class="owner-head">
+    <h3 id="ownerTitle">Panel del propietario</h3>
+    <button class="icon-close" id="ownerClose" type="button" aria-label="Cerrar panel">✕</button>
+  </div>
+  <label class="switch">
+    <input type="checkbox" id="editModeSwitch" role="switch">
+    <span>✎ Modo edición de precios</span>
+  </label>
+  <p class="owner-hint">Con el modo edición activo, los precios de la lista se vuelven campos editables. Guarda para conservar los cambios en este dispositivo.</p>
+  <fieldset>
+    <legend>Datos de contacto y WhatsApp</legend>
+    <div class="field">
+      <label for="inpWa">WhatsApp <small>(con lada, ej. 529991440060)</small></label>
+      <input id="inpWa" type="tel" inputmode="numeric" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="inpAddr">Dirección</label>
+      <input id="inpAddr" type="text" autocomplete="street-address">
+    </div>
+    <div class="field">
+      <label for="inpHours">Horarios</label>
+      <textarea id="inpHours" rows="3"></textarea>
+    </div>
+    <div class="field">
+      <label for="inpMaps">Liga de ubicación <small>(Google Maps)</small></label>
+      <input id="inpMaps" type="url" placeholder="https://maps.app.goo.gl/…">
+    </div>
+  </fieldset>
+  <div class="owner-actions">
+    <button class="btn btn-primary" id="btnSave" type="button">Guardar cambios</button>
+    <button class="btn btn-outline" id="btnCancel" type="button">Cancelar</button>
+    <button class="btn btn-ghost" id="btnRestore" type="button">Restaurar originales</button>
+    <button class="btn btn-ghost" id="btnLogout" type="button">Cerrar sesión</button>
+  </div>
+</aside>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotografía ampliada" hidden>
+  <button class="lb-btn" id="lbClose" type="button" aria-label="Cerrar">✕</button>
+  <button class="lb-btn" id="lbPrev" type="button" aria-label="Foto anterior">‹</button>
+  <figure>
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-btn" id="lbNext" type="button" aria-label="Foto siguiente">›</button>
+</div>
+
+<!-- MODAL LEGAL -->
+<div class="modal" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalTitle" hidden>
+  <div class="modal-card">
+    <h3 id="legalTitle"></h3>
+    <div id="legalBody"></div>
+    <button class="btn btn-primary" id="legalClose" type="button">Entendido</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+'use strict';
+/* ---------- utilidades ---------- */
+var $ = function(s,c){ return (c||document).querySelector(s); };
+var $$ = function(s,c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); };
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function esc(str){ return String(str).replace(/[&<>"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]; }); }
+function fmt(n){ return '$' + Number(n||0).toLocaleString('es-MX'); }
+function store(key,val){ try{ if(val===undefined){ var raw=localStorage.getItem(key); return raw?JSON.parse(raw):null; } localStorage.setItem(key,JSON.stringify(val)); }catch(e){ return null; } }
+function drop(key){ try{ localStorage.removeItem(key); }catch(e){} }
+function sstore(key,val){ try{ if(val===undefined){ var raw=sessionStorage.getItem(key); return raw?JSON.parse(raw):null; } sessionStorage.setItem(key,JSON.stringify(val)); }catch(e){ return null; } }
+function sdrop(key){ try{ sessionStorage.removeItem(key); }catch(e){} }
+
+/* ---------- credenciales del propietario (cámbialas aquí) ---------- */
+var ADMIN_USER = 'dblas';
+var ADMIN_PASS = 'dblas2026';
+
+/* ---------- datos base (Lista 2026) ---------- */
+var CATS = [
+  { id:'cortes', nombre:'Cortes', emoji:'✂️', quick:'Corte y peinado' },
+  { id:'color', nombre:'Color', emoji:'🎨', quick:'Color' },
+  { id:'tratamientos', nombre:'Tratamientos', emoji:'♡', quick:'Tratamientos' },
+  { id:'unas', nombre:'Uñas', emoji:'💅', quick:'Uñas' },
+  { id:'cejas', nombre:'Cejas y pestañas', emoji:'✨', quick:'Cejas y pestañas' },
+  { id:'barberia', nombre:'Barbería', emoji:'🧔', quick:'Barbería' }
+];
+var QUICK_ORDER = ['cortes','color','unas','cejas','barberia','tratamientos'];
+var DEFAULT_SERVICES = [
+  { id:'corte-dama', cat:'cortes', nombre:'Corte dama', nota:'Incluye lavado y peinado', precio:350, desde:true },
+  { id:'corte-caballero', cat:'cortes', nombre:'Corte caballero', precio:250 },
+  { id:'corte-ninos', cat:'cortes', nombre:'Corte niñas y niños', precio:200 },
+  { id:'brushing', cat:'cortes', nombre:'Brushing / peinado express', precio:180 },
+  { id:'fleco', cat:'cortes', nombre:'Retoque de fleco', precio:100 },
+  { id:'peinado-evento', cat:'cortes', nombre:'Peinado para evento', precio:450, desde:true },
+  { id:'tinte-global', cat:'color', nombre:'Tinte global', precio:600, desde:true },
+  { id:'balayage', cat:'color', nombre:'Balayage', nota:'El favorito de la casa', precio:1200, desde:true },
+  { id:'babylights', cat:'color', nombre:'Babylights', precio:1400, desde:true },
+  { id:'mechas', cat:'color', nombre:'Mechas / highlights', precio:900, desde:true },
+  { id:'raiz', cat:'color', nombre:'Retoque de raíz', precio:450 },
+  { id:'matiz', cat:'color', nombre:'Matiz / toner', precio:350 },
+  { id:'keratina', cat:'tratamientos', nombre:'Keratina', precio:900, desde:true },
+  { id:'botox-capilar', cat:'tratamientos', nombre:'Botox capilar', precio:700, desde:true },
+  { id:'hidratacion', cat:'tratamientos', nombre:'Hidratación profunda', precio:350 },
+  { id:'ampolleta', cat:'tratamientos', nombre:'Ampolleta reconstructiva', precio:250 },
+  { id:'detox', cat:'tratamientos', nombre:'Limpieza capilar detox', precio:300 },
+  { id:'anticaida', cat:'tratamientos', nombre:'Tratamiento anticaída', precio:400 },
+  { id:'manicure', cat:'unas', nombre:'Manicure clásico', precio:250 },
+  { id:'pedicure', cat:'unas', nombre:'Pedicure clásico', precio:300 },
+  { id:'gelish', cat:'unas', nombre:'Manicure gelish', precio:350 },
+  { id:'acrilicas', cat:'unas', nombre:'Uñas acrílicas (aplicación)', precio:550, desde:true },
+  { id:'retoque-acr', cat:'unas', nombre:'Retoque de acrílico', precio:400 },
+  { id:'retiro-acr', cat:'unas', nombre:'Retiro de acrílico', precio:150 },
+  { id:'nailart', cat:'unas', nombre:'Nail art (por uña)', precio:30, desde:true },
+  { id:'diseno-ceja', cat:'cejas', nombre:'Diseño y depilación de ceja', precio:150 },
+  { id:'tinte-ceja', cat:'cejas', nombre:'Tinte de ceja', precio:180 },
+  { id:'lifting', cat:'cejas', nombre:'Lifting de pestañas', precio:450 },
+  { id:'extensiones', cat:'cejas', nombre:'Extensiones de pestañas (clásicas)', precio:600, desde:true },
+  { id:'retoque-pest', cat:'cejas', nombre:'Retoque de pestañas', precio:350 },
+  { id:'bozo', cat:'cejas', nombre:'Depilación de bozo / rostro', precio:120 },
+  { id:'barber-corte', cat:'barberia', nombre:'Corte barber', precio:250 },
+  { id:'corte-barba', cat:'barberia', nombre:'Corte + barba', precio:350 },
+  { id:'barba', cat:'barberia', nombre:'Arreglo de barba', precio:180 },
+  { id:'afeitado', cat:'barberia', nombre:'Afeitado clásico con navaja', precio:220 },
+  { id:'barber-nino', cat:'barberia', nombre:'Corte niño barber', precio:200 },
+  { id:'facial-m', cat:'barberia', nombre:'Facial masculino express', precio:300 }
+];
+/* Datos reales del negocio: WhatsApp +52 999 144 0060 y ubicación en Google Maps */
+var DEFAULT_SETTINGS = {
+  whatsapp:'529991440060',
+  address:'',
+  hours:'Lunes a sábado\n10:00 – 20:00 h',
+  maps:'https://maps.app.goo.gl/V8rneB8D1cxbTggc7'
+};
+var IMG = {
+  'corte-dama':'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/14ede1161-5284-498b-b55b-9920a65af954.png',
+  'balayage':'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/16253b60c-4a5a-43fd-99c6-446d4cbbb243.png',
+  'gelish':'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/1e67f50cf-57c4-4bf3-a21f-fd0640f7f461.png',
+  'corte-barba':'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/1e11dbacc-726e-4092-a442-82c4fd575047.png',
+  'lifting':'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/182807f19-e555-4515-92fa-653547e884e2.png',
+  'keratina':'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/124d726c0-8cca-4a4f-9dc4-477d40473b48.png'
+};
+var FAVS = [
+  { id:'balayage', desc:'Luz y dimensión hechas a tu medida.' },
+  { id:'corte-dama', desc:'Corte que enamora, con lavado y peinado.' },
+  { id:'gelish', desc:'Manicure que dura semanas impecable.' },
+  { id:'corte-barba', desc:'El combo caballero de la casa.' },
+  { id:'lifting', desc:'Mirada despierta sin maquillaje diario.' },
+  { id:'keratina', desc:'Adiós frizz, hola brillo espejo.' }
+];
+var GALLERY = [
+  { src:IMG['corte-dama'], cat:'Cabello', title:'Corte y brushing suave', alt:'Clienta yucateca luciendo su corte nuevo con brushing ondulado' },
+  { src:IMG['balayage'], cat:'Color', title:'Balayage miel', alt:'Colorista mostrando el balayage miel de una clienta yucateca' },
+  { src:IMG['gelish'], cat:'Uñas', title:'Manicure gelish nude', alt:'Manicurista aplicando gelish nude a una clienta en Mérida' },
+  { src:IMG['corte-barba'], cat:'Barbería', title:'Corte y perfilado de barba', alt:'Barbero yucateco perfilando la barba de un cliente' },
+  { src:IMG['lifting'], cat:'Cejas', title:'Ceja y pestaña levantada', alt:'Clienta yucateca recibiendo lifting de pestañas y diseño de ceja' },
+  { src:IMG['keratina'], cat:'Cabello', title:'Brillo espejo post-tratamiento', alt:'Estilista aplicando tratamiento de keratina a una clienta de Mérida' },
+  { src:'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/16fa868ab-ea5d-4206-b4f6-07cbaa6bd017.png', cat:'Cabello', title:'Chignon de evento', alt:'Estilista creando un chignon de evento en una clienta yucateca' },
+  { src:'https://image.qwenlm.ai/public_source/2c33bcb1-4c82-4753-a5df-f56b4ac7434b/1564afc5b-b3f3-41b4-8e5c-c064dbd9e5e6.png', cat:'Color', title:'Asesoría de color', alt:'Estilista y clienta yucatecas eligiendo tono en la carta de color' }
+];
+var GAL_FILTERS = ['Todas','Cabello','Color','Uñas','Barbería','Cejas'];
+var EYE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>';
+var EYE_OFF = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/><path d="M4 4l16 16"/></svg>';
+
+/* ---------- estado ---------- */
+var state = {
+  settings: Object.assign({}, DEFAULT_SETTINGS, store('dblas_settings_v3') || {}),
+  services: store('dblas_prices_v2') || DEFAULT_SERVICES.map(function(s){ return Object.assign({}, s); }),
+  revealed: sstore('dblas_revealed_v1') || {},
+  editMode: false,
+  activeCat: 'cortes',
+  galFilter: 'Todas'
+};
+function svc(id){ for(var i=0;i<state.services.length;i++){ if(state.services[i].id===id) return state.services[i]; } return null; }
+function waDigits(){ return String(state.settings.whatsapp||'').replace(/\D/g,''); }
+function waLink(msg){ return 'https://wa.me/' + waDigits() + '?text=' + encodeURIComponent(msg); }
+function waPretty(){
+  var d = waDigits();
+  if(d.length === 12 && d.indexOf('52') === 0){ return '+52 ' + d.slice(2,5) + ' ' + d.slice(5,8) + ' ' + d.slice(8); }
+  if(d.length === 10){ return d.slice(0,3) + ' ' + d.slice(3,6) + ' ' + d.slice(6); }
+  return d ? ('+' + d) : '';
+}
+function priceLabel(s){ return (s.desde?'desde ':'') + fmt(s.precio); }
+function saveRevealed(){ sstore('dblas_revealed_v1', state.revealed); }
+
+/* ---------- toast ---------- */
+var toastEl = $('#toast'), toastTimer = null;
+function toast(msg){ toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 3200); }
+
+/* ---------- renders ---------- */
+function renderQuick(){
+  var html = QUICK_ORDER.map(function(cid){
+    var c = CATS.filter(function(x){ return x.id===cid; })[0];
+    return '<a class="qa-card reveal" href="#precios" data-cat="'+c.id+'" aria-label="'+esc(c.quick)+', ver servicios">' +
+      '<span class="qa-emoji" aria-hidden="true">'+c.emoji+'</span>' +
+      '<h3 class="qa-name">'+esc(c.quick)+'</h3>' +
+      '<span class="qa-cta">Ver opciones →</span></a>';
+  }).join('');
+  $('#qaGrid').innerHTML = html;
+}
+function renderFavs(){
+  var html = FAVS.map(function(f){
+    var s = svc(f.id); if(!s) return '';
+    var on = !!state.revealed[s.id];
+    return '<article class="fav-card reveal">' +
+      '<div class="fav-media"><img src="'+IMG[f.id]+'" width="800" height="600" loading="lazy" decoding="async" alt="'+esc(s.nombre)+' en una clienta o cliente yucateco en DBLAS Mérida"></div>' +
+      '<div class="fav-body"><h3>'+esc(s.nombre)+'</h3><p class="fav-desc">'+esc(f.desc)+'</p>' +
+      '<div class="fav-foot">' +
+        (on ? '<span class="fav-price"><em>precio</em>'+priceLabel(s)+'</span>' : '') +
+        '<button class="btn-peek'+(on?' on':'')+'" type="button" data-peek="'+s.id+'" aria-expanded="'+on+'">'+(on? EYE_OFF+' Ocultar precio' : EYE+' Ver precio')+'</button>' +
+        '<button class="btn btn-primary btn-sm" type="button" data-service="'+s.id+'">Reservar</button>' +
+      '</div></div></article>';
+  }).join('');
+  $('#favsGrid').innerHTML = html;
+}
+function renderChips(){
+  $('#priceChips').innerHTML = CATS.map(function(c){
+    return '<button class="chip" type="button" data-cat="'+c.id+'" aria-pressed="'+(state.activeCat===c.id)+'">'+esc(c.nombre)+'</button>';
+  }).join('');
+  updateCatToggle();
+}
+function updateCatToggle(){
+  var list = state.services.filter(function(s){ return s.cat===state.activeCat; });
+  var all = list.length && list.every(function(s){ return !!state.revealed[s.id]; });
+  $('#catToggle').textContent = all ? 'Ocultar todos los precios' : 'Mostrar todos los precios';
+}
+function renderPrices(){
+  document.body.classList.toggle('editing', state.editMode);
+  var rows = state.services.filter(function(s){ return s.cat===state.activeCat; }).map(function(s){
+    var side;
+    if(state.editMode){
+      side = '<div class="price-edit"><input class="price-input" type="number" min="0" step="10" inputmode="numeric" value="'+s.precio+'" data-price-id="'+s.id+'" aria-label="Precio de '+esc(s.nombre)+'">' +
+        '<label class="desde-toggle"><input type="checkbox" data-desde-id="'+s.id+'"'+(s.desde?' checked':'')+'> desde</label></div>';
+    } else if(state.revealed[s.id]){
+      side = '<span class="price-value">'+(s.desde?'<em>desde</em>':'')+fmt(s.precio)+'</span>' +
+        '<button class="btn btn-outline btn-sm" type="button" data-service="'+s.id+'">Reservar</button>' +
+        '<button class="btn-peek on" type="button" data-peek="'+s.id+'" aria-expanded="true" aria-label="Ocultar precio de '+esc(s.nombre)+'">'+EYE_OFF+'</button>';
+    } else {
+      side = '<button class="btn-peek" type="button" data-peek="'+s.id+'" aria-expanded="false" aria-label="Ver precio de '+esc(s.nombre)+'">'+EYE+' Ver precio</button>';
+    }
+    return '<li class="price-row"><div class="price-info"><h3>'+esc(s.nombre)+'</h3>'+(s.nota?'<p>'+esc(s.nota)+'</p>':'')+'</div><div class="price-side">'+side+'</div></li>';
+  }).join('');
+  $('#priceList').innerHTML = rows;
+  updateCatToggle();
+}
+function renderSelect(){
+  var html = '<option value="" selected>Elige un servicio…</option>' + CATS.map(function(c){
+    var opts = state.services.filter(function(s){ return s.cat===c.id; }).map(function(s){
+      return '<option value="'+s.id+'">'+esc(s.nombre)+'</option>';
+    }).join('');
+    return '<optgroup label="'+esc(c.nombre)+'">'+opts+'</optgroup>';
+  }).join('');
+  $('#bookService').innerHTML = html;
+}
+function renderContact(){
+  var addr = (state.settings.address||'').trim();
+  var mapsUrl = (state.settings.maps||'').trim();
+  $('#contactAddress').textContent = addr ? addr : 'Mérida, Yucatán\nToca el botón para abrir la ubicación exacta.';
+  var maps = $('#btnMaps');
+  if(mapsUrl){ maps.href = mapsUrl; maps.textContent = 'Cómo llegar'; }
+  else if(addr){ maps.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(addr); maps.textContent = 'Cómo llegar'; }
+  else { maps.href = waLink('¡Hola DBLAS! ¿Me compartes la ubicación del salón?'); maps.textContent = 'Pedir ubicación'; }
+  $('#contactHours').textContent = state.settings.hours || 'Consulta horarios por WhatsApp';
+  $('#contactWaNum').textContent = waPretty();
+  $('#btnWaQuestion').href = waLink('¡Hola DBLAS! 👋 Tengo una pregunta.');
+  $('#floatWa').href = waLink('¡Hola DBLAS! 👋 Quiero información.');
+  var fWa = $('#footerWa');
+  fWa.href = waLink('¡Hola DBLAS! 👋'); fWa.textContent = 'WhatsApp · ' + waPretty();
+  var fMaps = $('#footerMaps');
+  fMaps.href = mapsUrl || '#contacto';
+}
+function renderGalFilters(){
+  $('#galFilters').innerHTML = GAL_FILTERS.map(function(f){
+    return '<button class="chip" type="button" data-gal="'+esc(f)+'" aria-pressed="'+(state.galFilter===f)+'">'+esc(f)+'</button>';
+  }).join('');
+}
+function galList(){ return state.galFilter==='Todas' ? GALLERY : GALLERY.filter(function(g){ return g.cat===state.galFilter; }); }
+function renderGal(){
+  var items = galList();
+  $('#galGrid').innerHTML = items.map(function(g,i){
+    return '<button class="gal-tile" type="button" data-gal-index="'+i+'" aria-label="Ampliar foto: '+esc(g.title)+'">' +
+      '<img src="'+g.src+'" width="800" height="1000" loading="lazy" decoding="async" alt="'+esc(g.alt)+'">' +
+      '<span class="gal-cap"><strong>'+esc(g.title)+'</strong><span>'+esc(g.cat)+'</span></span></button>';
+  }).join('');
+}
+
+/* ---------- revelado de precios por servicio ---------- */
+function togglePeek(id){
+  state.revealed[id] = !state.revealed[id];
+  if(!state.revealed[id]) delete state.revealed[id];
+  saveRevealed();
+  renderPrices(); renderFavs();
+  syncBookPeek();
+}
+$('#catToggle').addEventListener('click', function(){
+  var list = state.services.filter(function(s){ return s.cat===state.activeCat; });
+  var all = list.length && list.every(function(s){ return !!state.revealed[s.id]; });
+  list.forEach(function(s){ if(all){ delete state.revealed[s.id]; } else { state.revealed[s.id] = true; } });
+  saveRevealed(); renderPrices(); renderFavs(); syncBookPeek();
+});
+/* Peek del formulario de reserva */
+var bookPeek = $('#bookPeek'), bookPriceOut = $('#bookPriceOut');
+function syncBookPeek(){
+  var id = $('#bookService').value;
+  if(!id || !state.revealed[id]){ bookPriceOut.hidden = true; bookPeek.classList.remove('on'); bookPeek.setAttribute('aria-expanded','false'); bookPeek.innerHTML = EYE + ' Ver precio del servicio'; return; }
+  var s = svc(id);
+  bookPriceOut.hidden = false; bookPriceOut.textContent = priceLabel(s);
+  bookPeek.classList.add('on'); bookPeek.setAttribute('aria-expanded','true'); bookPeek.innerHTML = EYE_OFF + ' Ocultar precio';
+}
+bookPeek.addEventListener('click', function(){
+  var id = $('#bookService').value;
+  if(!id){ toast('Elige primero un servicio 💇'); $('#bookService').focus(); return; }
+  togglePeek(id);
+});
+$('#bookService').addEventListener('change', function(){
+  var id = this.value;
+  if(id && !state.revealed[id]){ bookPriceOut.hidden = true; bookPeek.classList.remove('on'); bookPeek.setAttribute('aria-expanded','false'); bookPeek.innerHTML = EYE + ' Ver precio del servicio'; }
+  else { syncBookPeek(); }
+});
+
+/* ---------- lightbox ---------- */
+var lb = $('#lightbox'), lbIdx = 0, lastFocus = null;
+function lbOpen(i){
+  lbIdx = i; var g = galList()[i]; if(!g) return;
+  lastFocus = document.activeElement;
+  $('#lbImg').src = g.src; $('#lbImg').alt = g.alt;
+  $('#lbCap').innerHTML = esc(g.title) + '<span>'+esc(g.cat)+' · foto ilustrativa de referencia</span>';
+  lb.hidden = false; document.body.style.overflow='hidden'; $('#lbClose').focus();
+}
+function lbMove(d){ var n = galList().length; lbOpen((lbIdx + d + n) % n); }
+function lbCloseFn(){ lb.hidden = true; document.body.style.overflow=''; if(lastFocus) lastFocus.focus(); }
+$('#lbClose').addEventListener('click', lbCloseFn);
+$('#lbPrev').addEventListener('click', function(){ lbMove(-1); });
+$('#lbNext').addEventListener('click', function(){ lbMove(1); });
+lb.addEventListener('click', function(e){ if(e.target===lb) lbCloseFn(); });
+
+/* ---------- navegación / header ---------- */
+var header = $('.site-header'), menuBtn = $('#menuToggle'), mobileMenu = $('#mobileMenu');
+window.addEventListener('scroll', function(){ header.classList.toggle('scrolled', window.scrollY > 8); }, {passive:true});
+function closeMenu(){ mobileMenu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.setAttribute('aria-label','Abrir menú'); }
+menuBtn.addEventListener('click', function(){
+  var open = !mobileMenu.classList.contains('open');
+  mobileMenu.classList.toggle('open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+});
+$$('#mobileMenu a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+/* scrollspy */
+var spyLinks = $$('.main-nav a[data-spy]');
+if('IntersectionObserver' in window){
+  var spyObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        spyLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('data-spy')===en.target.id); });
+      }
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  ['servicios','precios','galeria','contacto'].forEach(function(id){ var el = document.getElementById(id); if(el) spyObs.observe(el); });
+  var revObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); revObs.unobserve(en.target); } });
+  }, {threshold:.12});
+  function observeReveals(){ $$('.reveal:not(.in)').forEach(function(el){ revObs.observe(el); }); }
+  window.observeReveals = observeReveals;
+} else {
+  window.observeReveals = function(){ $$('.reveal').forEach(function(el){ el.classList.add('in'); }); };
+}
+
+/* ---------- interacciones de catálogo ---------- */
+function setTab(catId){ state.activeCat = catId; renderChips(); renderPrices(); }
+function goToPrices(catId){
+  setTab(catId);
+  document.getElementById('precios').scrollIntoView({behavior: reduced ? 'auto' : 'smooth'});
+  if(history.pushState) history.pushState(null,'','#precios');
+}
+function preselect(serviceId){
+  var sel = $('#bookService'); sel.value = serviceId;
+  var card = $('#bookingForm');
+  document.getElementById('reservar').scrollIntoView({behavior: reduced ? 'auto' : 'smooth'});
+  card.classList.add('flash'); setTimeout(function(){ card.classList.remove('flash'); }, 1200);
+  syncBookPeek();
+  setTimeout(function(){ sel.focus({preventScroll:true}); }, reduced ? 0 : 450);
+}
+document.addEventListener('click', function(e){
+  var qa = e.target.closest('[data-cat].qa-card');
+  if(qa){ e.preventDefault(); goToPrices(qa.getAttribute('data-cat')); return; }
+  var chip = e.target.closest('#priceChips .chip');
+  if(chip){ setTab(chip.getAttribute('data-cat')); return; }
+  var peek = e.target.closest('[data-peek]');
+  if(peek){ togglePeek(peek.getAttribute('data-peek')); return; }
+  var srv = e.target.closest('[data-service]');
+  if(srv){ preselect(srv.getAttribute('data-service')); return; }
+  var gt = e.target.closest('[data-gal-index]');
+  if(gt){ lbOpen(parseInt(gt.getAttribute('data-gal-index'),10)); return; }
+  var gf = e.target.closest('#galFilters .chip');
+  if(gf){ state.galFilter = gf.getAttribute('data-gal'); renderGalFilters(); renderGal(); return; }
+  var legal = e.target.closest('[data-legal]');
+  if(legal){ openLegal(legal.getAttribute('data-legal')); return; }
+});
+
+/* ---------- reserva ---------- */
+var bookDate = $('#bookDate');
+bookDate.min = new Date().toISOString().split('T')[0];
+$('#bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var serviceId = $('#bookService').value, date = bookDate.value, time = $('#bookTime').value, name = $('#bookName').value.trim();
+  if(!serviceId){ toast('Elige el servicio que quieres 💇'); $('#bookService').focus(); return; }
+  if(!date){ toast('Elige el día que prefieres 📅'); bookDate.focus(); return; }
+  if(!name){ toast('Cuéntanos tu nombre para la cita ✨'); $('#bookName').focus(); return; }
+  if(!waDigits()){ toast('Configura el número de WhatsApp en el panel del propietario'); return; }
+  var s = svc(serviceId);
+  var fecha = new Date(date + 'T12:00:00').toLocaleDateString('es-MX',{weekday:'long', day:'numeric', month:'long', year:'numeric'});
+  var msg = '¡Hola DBLAS! 👋 Quiero reservar una cita.\n' +
+    '• Servicio: ' + s.nombre + '\n' +
+    '• Fecha: ' + fecha + '\n' +
+    (time ? '• Horario preferido: ' + time + '\n' : '') +
+    '• Nombre: ' + name;
+  window.open(waLink(msg), '_blank', 'noopener');
+  toast('Abriendo WhatsApp con tu solicitud… 💬');
+});
+
+/* ---------- WhatsApp flotante: entrada + globo de aviso ---------- */
+var floatWa = $('#floatWa'), waHint = $('#waHint');
+setTimeout(function(){ floatWa.classList.add('in'); }, reduced ? 0 : 900);
+if(!sstore('dblas_wahint_v1')){
+  setTimeout(function(){
+    waHint.classList.add('show');
+    sstore('dblas_wahint_v1', 1);
+    setTimeout(function(){ waHint.classList.remove('show'); }, 7000);
+  }, reduced ? 1200 : 2400);
+}
+floatWa.addEventListener('click', function(){ waHint.classList.remove('show'); });
+
+/* ---------- acceso propietario: login + panel (oculto) ---------- */
+var loginModal = $('#loginModal'), loginCard = $('#loginCard'), loginError = $('#loginError');
+var panel = $('#ownerPanel'), overlay = $('#ownerOverlay');
+var modalLastFocus = null;
+function isAuth(){ try{ return sessionStorage.getItem('dblas_admin') === '1'; }catch(e){ return false; } }
+function openLogin(){
+  modalLastFocus = document.activeElement;
+  loginError.hidden = true; $('#loginUser').value=''; $('#loginPass').value='';
+  loginModal.hidden = false; document.body.style.overflow='hidden';
+  setTimeout(function(){ $('#loginUser').focus(); }, 60);
+}
+function closeLogin(){
+  loginModal.hidden = true; document.body.style.overflow='';
+  if(modalLastFocus) modalLastFocus.focus();
+}
+function adminAccess(){
+  if(isAuth()){ openOwner(false); } else { openLogin(); }
+}
+$('#loginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var u = $('#loginUser').value.trim(), p = $('#loginPass').value;
+  if(u === ADMIN_USER && p === ADMIN_PASS){
+    try{ sessionStorage.setItem('dblas_admin','1'); }catch(err){}
+    closeLogin(); openOwner(false); toast('Bienvenido/a · sesión iniciada ✓');
+  } else {
+    loginError.hidden = false;
+    loginCard.classList.remove('shake'); void loginCard.offsetWidth; loginCard.classList.add('shake');
+    $('#loginPass').value=''; $('#loginPass').focus();
+  }
+});
+function openOwner(withEdit){
+  if(!isAuth()){ openLogin(); return; }
+  modalLastFocus = document.activeElement;
+  if(withEdit){ state.editMode = true; renderPrices(); }
+  $('#editModeSwitch').checked = state.editMode;
+  $('#inpWa').value = state.settings.whatsapp || '';
+  $('#inpAddr').value = state.settings.address || '';
+  $('#inpHours').value = state.settings.hours || '';
+  $('#inpMaps').value = state.settings.maps || '';
+  overlay.hidden = false; panel.classList.add('open'); panel.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+  setTimeout(function(){ $('#ownerClose').focus(); }, 60);
+}
+function closeOwner(){
+  overlay.hidden = true; panel.classList.remove('open'); panel.setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+  if(modalLastFocus) modalLastFocus.focus();
+}
+$('#ownerClose').addEventListener('click', function(){ if(state.editMode){ state.editMode=false; renderPrices(); } closeOwner(); });
+overlay.addEventListener('click', function(){ if(state.editMode){ state.editMode=false; renderPrices(); } closeOwner(); });
+$('#editModeSwitch').addEventListener('change', function(e){ state.editMode = e.target.checked; renderPrices(); });
+$('#btnSave').addEventListener('click', function(){
+  if(state.editMode){
+    $$('.price-input').forEach(function(inp){
+      var s = svc(inp.getAttribute('data-price-id'));
+      if(s){ var v = parseInt(inp.value,10); s.precio = isNaN(v) || v < 0 ? s.precio : v; }
+    });
+    $$('[data-desde-id]').forEach(function(cb){ var s = svc(cb.getAttribute('data-desde-id')); if(s) s.desde = cb.checked; });
+    store('dblas_prices_v2', state.services);
+    state.editMode = false; $('#editModeSwitch').checked = false;
+  }
+  state.settings.whatsapp = $('#inpWa').value.trim();
+  state.settings.address = $('#inpAddr').value.trim();
+  state.settings.hours = $('#inpHours').value;
+  state.settings.maps = $('#inpMaps').value.trim();
+  store('dblas_settings_v3', state.settings);
+  renderQuick(); renderFavs(); renderChips(); renderPrices(); renderSelect(); renderContact(); syncBookPeek();
+  closeOwner(); toast('Cambios guardados correctamente ✓');
+});
+$('#btnCancel').addEventListener('click', function(){
+  state.editMode = false; $('#editModeSwitch').checked = false;
+  renderPrices(); closeOwner(); toast('Cambios descartados');
+});
+$('#btnRestore').addEventListener('click', function(){
+  if(!window.confirm('¿Restaurar precios y datos de contacto originales? Se perderán los cambios guardados en este dispositivo.')) return;
+  drop('dblas_prices_v2'); drop('dblas_settings_v3');
+  state.services = DEFAULT_SERVICES.map(function(s){ return Object.assign({}, s); });
+  state.settings = Object.assign({}, DEFAULT_SETTINGS);
+  state.editMode = false;
+  renderQuick(); renderFavs(); renderChips(); renderPrices(); renderSelect(); renderContact(); syncBookPeek();
+  $('#editModeSwitch').checked = false;
+  closeOwner(); toast('Datos originales restaurados ✓');
+});
+$('#btnLogout').addEventListener('click', function(){
+  sdrop('dblas_admin');
+  if(state.editMode){ state.editMode=false; renderPrices(); }
+  closeOwner(); toast('Sesión cerrada 🔒');
+});
+/* Acceso discreto: hash #admin / #propietario o Ctrl + Alt + P */
+function checkAdminHash(){
+  if(location.hash === '#admin' || location.hash === '#propietario'){
+    if(history.replaceState) history.replaceState(null,'',location.pathname + location.search);
+    adminAccess();
+  }
+}
+window.addEventListener('hashchange', checkAdminHash);
+document.addEventListener('keydown', function(e){
+  if(e.ctrlKey && e.altKey && (e.key === 'p' || e.key === 'P')){ e.preventDefault(); adminAccess(); }
+});
+
+/* ---------- modal legal ---------- */
+var legalModal = $('#legalModal'), legalLastFocus = null;
+var LEGAL = {
+  privacidad: { t:'Aviso de privacidad', b:'<p>Los datos que compartes en este sitio (nombre, fecha, horario y servicio de tu cita) se utilizan únicamente para agendar tu servicio y contactarte por WhatsApp.</p><p>No compartimos tu información con terceros.</p>' },
+  terminos: { t:'Términos de uso', b:'<p>Los precios mostrados corresponden a la lista 2026 en pesos mexicanos (MXN) y se muestran al tocar “Ver precio”. Los servicios marcados como “desde” pueden variar según largo, densidad o técnica; se confirman antes de comenzar.</p><p>Las reservas propuestas por WhatsApp quedan sujetas a confirmación de disponibilidad por parte del salón.</p>' }
+};
+function openLegal(kind){
+  var d = LEGAL[kind] || LEGAL.privacidad;
+  legalLastFocus = document.activeElement;
+  $('#legalTitle').textContent = d.t; $('#legalBody').innerHTML = d.b;
+  legalModal.hidden = false; document.body.style.overflow='hidden'; $('#legalClose').focus();
+}
+function closeLegal(){ legalModal.hidden = true; document.body.style.overflow=''; if(legalLastFocus) legalLastFocus.focus(); }
+$('#legalClose').addEventListener('click', closeLegal);
+legalModal.addEventListener('click', function(e){ if(e.target===legalModal) closeLegal(); });
+
+/* ---------- teclado global ---------- */
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){
+    if(!lb.hidden){ lbCloseFn(); return; }
+    if(!loginModal.hidden){ closeLogin(); return; }
+    if(!legalModal.hidden){ closeLegal(); return; }
+    if(panel.classList.contains('open')){ closeOwner(); return; }
+    if(mobileMenu.classList.contains('open')){ closeMenu(); menuBtn.focus(); return; }
+  }
+  if(!lb.hidden){
+    if(e.key === 'ArrowLeft'){ lbMove(-1); }
+    if(e.key === 'ArrowRight'){ lbMove(1); }
+    if(e.key === 'Tab'){
+      var f = [$('#lbClose'), $('#lbPrev'), $('#lbNext')];
+      var i = f.indexOf(document.activeElement);
+      e.preventDefault();
+      var next = e.shiftKey ? (i <= 0 ? f.length-1 : i-1) : (i === f.length-1 ? 0 : i+1);
+      f[next].focus();
+    }
+  }
+});
+
+/* ---------- init ---------- */
+drop('dblas_reviews_v2'); /* limpieza: la sección de reseñas fue retirada */
+renderQuick(); renderFavs(); renderChips(); renderPrices(); renderSelect();
+renderContact(); renderGalFilters(); renderGal(); syncBookPeek();
+checkAdminHash();
+if(window.observeReveals) window.observeReveals();
+})();
+</script>
+</body>
+</html>
